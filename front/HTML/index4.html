@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td
+            {
+                border : 1px solid #ccc;
+                border-collapse: collapse;
+            }
+            th, td
+            {
+                padding : 10px 20px;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <p>순서 있는 리스트</p>
+        <ol>
+            <li>항목 1</li>
+            <li>항목 2</li>
+            <li>항목 3</li>
+        </ol>
+        <p>순서 없는 리스트</p>
+        <ul>
+            <li>항목 1</li>
+            <li>항목 2</li>
+            <li>항목 3</li>
+        </ul>
+
+        <h2>상품 구성</h2>
+        <table>
+            <caption>선물용 가정용 상품 구성</caption>
+            <thead>
+                <tr>
+                    <th>용도</th>
+                    <th>증량</th>
+                    <th>수량</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">선물용</td>
+                    <td>3kg</td>
+                    <td>11~16과</td>
+                    <td>35,000원</td>
+                </tr>
+                <tr>
+                    <td>5kg</td>
+                    <td>18~26과</td>
+                    <td>52,000원</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">가정용</td>
+                    <td>3kg</td>
+                    <td>11~16과</td>
+                    <td>30,000원</td>
+                </tr>
+                <tr>
+                    <td>5kg</td>
+                    <td>18~26과</td>
+                    <td>47,000원</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+<!--
+리스트는 저비용으로 리스트를 만들 수 있다.
+다만, 너무 리스트스러워서 느낌이 좋진 않다.
+css로 마개조를 시키기 때문에 그냥 안 써도 상관없다.
+그렇지만 개발자 간 가독성이 좋기는 하다.
+table과 grid의 차이 : 행과 열로 정리된 데이터를 보여줄 때 table을. 
+웹 페이지의 레이아웃을 디자인할 때 grid를 쓴다.
+마크업 랭귀지의 치명적인 단점 : 귀찮음. 복잡함. 손이 많이 감.
+현대의 작업 방식 : figma > 자동 html 변환 > css 마무리.
+-->
