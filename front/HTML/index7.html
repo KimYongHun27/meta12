@@ -8,8 +8,23 @@
 <body>
     <h3>폼 태그 예제</h3>
     <form action="">
-        <div><lavle for="user-id">id</lavle><input type="text" id="user-id"></div>
-        <div><lavle for="user-password">pw</lavle><input type="text" id="user-password"></div>
+        <div><label for="user-id">id</label><input type="text" id="user-id" name="username"></div>
+        <div><label for="user-password">pw</label><input type="password" id="user-password" name="password"></div>
+    </form>
+
+    <form action ="">
+        <p>주문할 상품을 선택해주세요.</p>
+        <ul>
+            <li><label><input type="checkbox" name="prod" value="s_3">선물용 3kg</label></li>
+            <li><label><input type="checkbox" name="prod" value="s_3">선물용 5kg</label></li>
+            <li><label><input type="checkbox" name="prod" value="f_3">가정용 3kg</label></li>
+            <li><label><input type="checkbox" name="prod" value="f_5">가정용 5kg</label></li>
+        </ul>
+        <p>포장선택</p>
+        <ul>
+            <li><label><input type="radio" name="gift" value="yes">선물포장</label></li>
+            <li><label><input type="radio" name="gift" value="no">선물포장 안 함</label></li>
+        </ul>
     </form>
 </body>
 </html>
