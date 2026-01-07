@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 요소 선택자 */
+        div
+        {
+            background-color:blueviolet;
+        }
+        /* 클래스 선택자 */
+        .a1
+        {
+            background-color: bisque;
+        }
+        /* id 선택자 */
+        #id100
+        {
+            background-color: brown;
+        }
+        #id200
+        {
+            background-color: aqua;
+        }
+        article.a1
+        {
+            background-color: coral;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>DIV 요소 입니다.</div>
+    <p>p 요소 입니다.</p>
+    <p class="a1">클래스가 a1입니다.</p>
+    <p class="a2">클래스가 a2입니다.</p>
+    <p id="id100">id가 100입니다.</p>
+    <!-- id 와 class 가 중복 되어있을 때, 우선 순위는 id가 높기 때문에 class는 적용되지 않는다 -->
+    <p class="a1" id="id200">id가 200입니다.</p>
+    <article class="a1"> 아티클 클래스 a1</article>
+</body>
+</html>
+
+<!-- 
+block           한 줄 전체를 전부 가진다.
+inline-block    
+inline          콘텐츠 길이 만큼만 가진다.
+-->
