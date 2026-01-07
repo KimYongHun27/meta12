@@ -6,11 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- 
+    핵심 포인트 여기에 사용되는 문법은 서버로의 폼 전송을 목적으로 함.
+    <form> 과 함께 사용되는 <input> 의 타입을 이해해야 함.
+    최종적으로 유저의 정보를 서버로 전달하는 동작은 <input type ="submit"> 으로 완성됨.
+    -->
     <h3>폼 태그 예제</h3>
     <form action="">
         <div><label for="user-id">id</label><input type="text" id="user-id" name="username"></div>
         <div><label for="user-password">pw</label><input type="password" id="user-password" name="password"></div>
-        <div><input type="submit" value="login"></div>
+
+        <!-- 아래 두 코드는 동일한 기능을 제공한다. -->
+        <div><input type="submit" value="submit login"></div>
+        <div><button>button login</button></div>
 
         <p>주문할 상품을 선택해주세요.</p>
         <ul>
@@ -29,7 +37,16 @@
             <input type="reset" value="주문 취소">
         </div>
         <div><input type="date" name="date"></div>
+        <!-- 아래 버튼 모양은 submit이 아니므로 전송 기능이 없는 그냥 버튼이다. -->
         <div><input type="button" value="i'm button"></div>
+        <!-- button 태그는 기본적으로 submit을 포함하고 있음. -->
+        <div><button>i'm button</button></div>
+        <input type="file">
+        <!-- 유저가 볼 수 없고, 입력도 불가능하지만 트래킹을 위해 사용한다. -->
+        <input type="hidden" name="상품 id" value="12345">
+        <!-- placeholder : 입력해야 하는 서식을 미리 알리거나, 입력에 대한 정보를 알리는 파라미터 -->
+        <input type="text" placeholder="여기에는 주소를 적어주세요." name="address">
+
 
     </form>
 </body>
