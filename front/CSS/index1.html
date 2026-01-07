@@ -3,32 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* 자손 선택자 : 자손이란? 자신으로부터 포함된 모든 자식들. */
-        div p
-        {
-            color: aqua;
-        }
-        /* 자식 선택자 */
-        div>p
-        {
-            background-color: blue;
-        }
-        /* 
-        인접 형제 선택자 : 의외로 많이 쓴다. 그래도 잘 안 쓴다.
-        폰트의 종류 + 굵기 제공 여부 (100~900) + 가독성 등을 잘 보고 선택 
-        */
-        h1+p
-        {
-            font-weight: bold;
-        }
-        /* 일반형제 선택자 */
-        h1~p
-        {
-            border-left : 4px solid gray;
-        }
-
-    </style>
+    <!-- 상대 경로에서 주요한 문법 .(현재 폴더) 과 ..(부모 폴더)-->
+    <link rel="stylesheet" href="stlye1.css">
     <title>Document</title>
 </head>
 <body>
