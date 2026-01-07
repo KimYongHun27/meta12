@@ -27,6 +27,22 @@
         {
             background-color: coral;
         }
+        .temp
+        {
+            /* 
+            충돌 시 해결이 가능한 최후의 수단 important
+            어지간하면 쓰지 마라. 
+            */
+            color : bule !important;
+        }
+        input[type="text"]
+        {
+            border : 2px solid blue;
+        }
+        [type="password"]
+        {
+            border : 2px solid rgba(132, 247, 255, 0.774);
+        }
 
     </style>
     <title>Document</title>
@@ -40,6 +56,11 @@
     <!-- id 와 class 가 중복 되어있을 때, 우선 순위는 id가 높기 때문에 class는 적용되지 않는다 -->
     <p class="a1" id="id200">id가 200입니다.</p>
     <article class="a1"> 아티클 클래스 a1</article>
+    <p class="temp" style="border : 1px dotted green;">인라인 스타일입니다.</p>
+    <form>
+        <p><input type="text"></p>
+        <p><input type="password"></p>
+    </form>
 </body>
 </html>
 
@@ -47,4 +68,16 @@
 block           한 줄 전체를 전부 가진다.
 inline-block    
 inline          콘텐츠 길이 만큼만 가진다.
+-->
+
+<!-- 
+css 선택자의 우선 순위 서열
+1. important
+2. inline style
+3. id 선택자
+4. class 선택자
+5. 요소 선택자
+6. 전체 선택자
+
+충돌은 일으키지 않는 것이 가장 훌룡한 설계다.
 -->
