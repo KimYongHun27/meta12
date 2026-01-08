@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        *{/* 모든 태그에 대하여. 우선 순위도 낮아 안전하게 사용이 가능하다. */
+            /* html페이지 전체에 적용되는 기본 마진과 패딩을 0으로 만들어서 개발자가 의도대로 스타일링 */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .a1
         {
             font-size: 32px;
             border :2px solid gray;
+            border-radius: 10px; /*0 부터 200*/
             width :500px;
             height: 400px;
             /* padding-left :100px; 패딩은 쓰지 않는 편이 좋다. */
@@ -16,6 +23,7 @@
             /* 세로 정렬은 flax box가 참 좋다. 돈되는 건 ui다.*/
             /* 백그라운드 이미지는 최소한 FHD화질을 이용해야 한다. */
             /* 마진 패딩부터 맞추면 나중에 일 두 번 하게 된다. 가로 세로를 먼저 잡아주고 세부 콘텐츠를 집어넣어준다. */
+            padding : 20px;
         }
     </style>
     <title>Document</title>
