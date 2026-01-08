@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox 레이아웃 예제</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      /* 전체 페이지 */
+      .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* 헤더 */
+      .header {
+        background-color: rgb(31, 60, 85);
+        color: white;
+        flex:1;
+      }
+
+      /* 메인 영역 (사이드 + 콘텐츠) */
+      .main {
+        display: flex;
+        flex:8;
+      }
+
+      /* 사이드 메뉴 */
+      .sidebar {
+        background-color: rgb(54, 94, 129);
+        color: white;
+        flex:1;
+      }
+
+      /* 콘텐츠 영역 */
+      .content {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(209, 209, 209);
+        flex:9;
+        padding: 20px;
+        gap:20px
+      }
+
+      /* 본문 */
+      .article {
+        background-color: rgb(255, 255, 255);
+        flex:2;
+      }
+
+      /* 이벤트 광고 */
+      .event {
+        background-color: rgb(255, 244, 96);
+        flex :1;
+      }
+
+      /* 로그인 창 */
+      .login {
+        background-color: rgb(49, 189, 142);
+        flex: 1;
+      }
+
+      /* 푸터 */
+      .footer {
+        background-color: rgb(41, 41, 41);
+        color: white;
+        flex : 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">헤더 (로고 / 상단메뉴)</header>
+
+      <div class="main">
+        <nav class="sidebar">사이드 메뉴</nav>
+
+        <section class="content">
+          <article class="article">본문 콘텐츠</article>
+
+          <div class="event">이벤트 광고</div>
+
+          <aside class="login">로그인 창</aside>
+        </section>
+      </div>
+
+      <footer class="footer">푸터</footer>
+    </div>
+  </body>
+</html>
