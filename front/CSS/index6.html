@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body
+        {
+            height: 100vh;
+        }
         .container
         {
             display:flex;
             /* flex-direction: column; */
+            gap : 0px 0px;/* margin 은 쓰지 않는다. 써야해도 쓰지 않는다. */
         }
         .sidebar
         {
             background-color: #f0f0f0;
-            flex : 0 0 200px; /* 확대 x, 축소 x, 사이즈 200px 보장. */
+            /* flex : 0 0 200px; 확대 x, 축소 x, 사이즈 200px 보장. */
+            flex : 1;
             /* flex-grow: 1; */
         }
         .main
         {
             background-color: #c4cfff;
-            flex: 1; /* 확장 o, 축소 o, 텍스트 크기 보장 x */
+            flex: 2; /* 확장 o, 축소 o, 텍스트 크기 보장 x  다른 flex 보다 2배 크다.*/
         }
     </style>
     <title>Document</title>
@@ -32,3 +38,8 @@
     </div>
 </body>
 </html>
+<!-- 
+1. flex와 box를 이용해 구조를 잡는다.
+2. gap 을 이용해 box 와 box 사이 여백을 준다.
+3. padding을 이용해 box 내부 여백을 만든다.
+-->

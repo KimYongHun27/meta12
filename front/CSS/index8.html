@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox 대시보드 레이아웃</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        font-family: arial,sans-serif;
+        display: flex;
+      }
+
+      /* 전체 대시보드 */
+      .dashboard {
+        display:flex;
+      }
+
+      /* 왼쪽 네비게이션 */
+      .nav {
+        flex:1;
+        background-color:rgb(0, 1, 46);
+        color: white;
+      }
+
+      /* 오른쪽 전체 영역 */
+      .right {
+        display: flex;
+        flex: 4;
+        flex-direction: column;
+        background-color:rgb(167, 184, 183);
+      }
+
+      /* 상단바 */
+      .topbar {
+        background-color:rgba(0, 15, 102, 0.705);
+        color: white;
+        flex: 1;
+        
+      }
+
+      /* 콘텐츠 영역 */
+      .content {
+        display:flex;
+        flex : 8;
+        padding: 10px;
+      }
+
+      /* 메인 콘텐츠 */
+      .main-content {
+        background-color:rgb(255, 255, 255);
+        flex:3;
+      }
+
+      /* 서브 패널 */
+      .side-panel {
+        background-color:rgb(255, 153, 0);
+        flex: 1;
+      }
+
+      /* 하단 정보바 */
+      .status {
+        background-color:rgb(85, 87, 168);
+        color: white;
+        flex: 1;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+
+      <aside class="nav">왼쪽 네비게이션</aside>
+
+      <div class="right">
+        <header class="topbar">상단바 (검색 / 사용자 정보)</header>
+
+
+
+        <main class="content">
+          <section class="main-content">메인 콘텐츠 (차트 / 목록)</section>
+
+          <aside class="side-panel">서브 패널 (알림 / 요약)</aside>
+        </main>
+
+
+
+        <footer class="status">하단 정보바</footer>
+      </div>
+
+
+    </div>
+  </body>
+</html>
