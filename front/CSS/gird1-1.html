@@ -10,6 +10,44 @@
             /* 4개의 열을 동일한 비율로(1fr)생성해라. */
             grid-template-columns: repeat(4, 1fr);
             max-width: 600px;
+            border-left: 1px solid grey;
+            border-top: 1px solid grey;
+        }
+        .cell
+        {
+            border-right: 1px solid grey;
+            border-bottom: 1px solid grey;
+            padding: 10px;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header
+        {
+            background-color: #00aaff;
+            color: white;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+        .number
+        {
+            /* 우측 정렬 gird는 주축이 항상 가로 방향으로 고정이다. justify는 가로 정렬이다. */
+            justify-content: flex-end;
+        }
+        .footer
+        {
+            background-color: #ffe082;
+            font-weight: bold;
+        }
+        .merge-2
+        {
+            grid-column: span 2;
+        }
+        h2
+        {
+            text-align: center;
+            width: 600px;
         }
     </style>
     <title>Document</title>
@@ -30,7 +68,7 @@
         <div class="cell">12월 03일</div>
         <div class="cell">식비</div>
         <div class="cell"></div>
-        <div class="cell">50,000</div>
+        <div class="cell number">50,000</div>
 
         <div class="cell">12월 05일</div>
         <div class="cell">교통비</div>
@@ -47,8 +85,7 @@
         <div class="cell number"></div>
         <div class="cell number">80,000</div>
 
-        <div class="cell footer">합계</div>
-        <div class="cell footer"></div>
+        <div class="cell footer merge-2">합계</div>
         <div class="cell footer number">3,200,000</div>
         <div class="cell footer number">160,000</div>
         
