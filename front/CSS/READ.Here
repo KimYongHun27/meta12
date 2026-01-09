@@ -1,0 +1,11 @@
+/* 가운데 정렬 공식!!! */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+/* 박스 기본 속성 제거 */
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
