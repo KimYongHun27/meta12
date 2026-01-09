@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+        body {
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .header
+        {
+            display: flex;
+            background-color: rgb(0, 110, 255);
+            height: 60px;
+            justify-content: center;
+            gap : 10px
+        }
+        .Year
+        {
+            /* background-color: beige; */
+            font-size: 40px;
+            color: white;
+        }
+        .Month
+        {
+            /* background-color: rgb(240, 240, 0); */
+            font-size: 40px;
+            color: white;
+        }
+        .wrap
+        {
+            text-align: center;
+        }
+        .wrap_week
+        {
+            display: flex;
+            flex: 0 1 60px;
+        }
+        .week
+        {
+            background-color: rgb(204, 239, 255);
+            flex: 1 1 calc(14%);
+            border: 1px solid black;  
+        }
+        .wrap_date
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        .wrap_date :nth-child(7n)
+        {
+            background-color: rgb(255, 178, 77);
+        }
+        .wrap_date :nth-child(7n +1)
+        {
+            background-color: rgb(255, 178, 77);
+        }
+        .date
+        {
+            /* background-color: aqua; */
+            flex: 1 1 calc(14%);
+            border: 1px solid black;   
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <div class="Year">2026년</div>
+        <div class="Month">1월</div>
+        </div>
+        <div class="wrap wrap_week">
+            <div class="week">일</div>
+            <div class="week">월</div>
+            <div class="week">화</div>
+            <div class="week">수</div>
+            <div class="week">목</div>
+            <div class="week">금</div>
+            <div class="week">토</div>
+        </div>
+        <div class="wrap wrap_date">
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date">1 신년휴일</div>
+            <div class="date">2 휴강</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5 HTML</div>
+            <div class="date">6 HTML</div>
+            <div class="date">7 CSS</div>
+            <div class="date">8 CSS</div>
+            <div class="date">9 CSS</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12 CSS</div>
+            <div class="date">13 개인 웹 페이지 설계</div>
+            <div class="date">14 javascript</div>
+            <div class="date">15 javascript</div>
+            <div class="date">16 javascript</div>
+            <div class="date">17</div>
+            <div class="date">18 </div>
+            <div class="date">19 javascript</div>
+            <div class="date">20 javascript</div>
+            <div class="date">21 개인 웹 페이지 설계</div>
+            <div class="date">22 개인 웹 페이지 설계</div>
+            <div class="date">23 개인 웹 페이지 설계</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26 과정 마무리 테스트</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date"></div>
+        </div>
+    </div>
+
+</body>
+</html>
