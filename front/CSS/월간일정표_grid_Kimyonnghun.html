@@ -43,7 +43,6 @@
    .header
    {
         background-color: rgb(0, 102, 255);
-        max-width: 800px;
    }
    h2
    {
@@ -61,6 +60,10 @@
      2. 고정된 화면 너머의 콘텐츠는 body 크기를 가지는 콘텐츠와 분리되어 보인다.
      3. 해결 방법은 스크롤시 화면 비율을 조정하거나, 애초에 body의 사이즈를 콘텐츠 중 최대 크기의 콘텐츠 사이즈를 따르도록
      설정하는 방법이 있을 거 같다.
+
+     !!!body의 문제가 아닌 거 같다. header와 h2의 크기 자체가 제멋대로 변하고 있다.
+     header에 max-width가 800으로 설정되어있었다.
+     달력 크기를 맞추려고 넣었던 거 같다.
        -->
     <div class="header">
         <h2>2026년 1월</h2>
@@ -116,3 +119,8 @@
     </div>
 </body>
 </html>
+
+<!-- 
+https://freefrontend.com/css-flexbox-examples/?utm_source=chatgpt.com
+
+-->
