@@ -16,6 +16,14 @@
         border-left: 1px solid grey;
         border-top: 1px solid grey;
    }
+   .wrap_month > .cell:nth-child(7n) 
+     {
+          background-color: rgb(255, 178, 77);
+     }
+     .wrap_month > .cell:nth-child(7n+1)
+     {
+          background-color: rgb(255, 178, 77);
+     }
    .cell
    {
         border-right: 1px solid grey;
@@ -32,10 +40,6 @@
     padding: 20px;
     text-align: center;
    }
-   .date :nth-child(7n)
-   {
-        background-color: rgb(255, 178, 77);
-   }
    .header
    {
         background-color: rgb(0, 102, 255);
@@ -51,58 +55,64 @@
 
 </head>
 <body>
+     <!-- 
+     Body의 문제점
+     1. 화면이 너무 작아지면 body 사이즈가 작은 화면에 고정된다.
+     2. 고정된 화면 너머의 콘텐츠는 body 크기를 가지는 콘텐츠와 분리되어 보인다.
+     3. 해결 방법은 스크롤시 화면 비율을 조정하거나, 애초에 body의 사이즈를 콘텐츠 중 최대 크기의 콘텐츠 사이즈를 따르도록
+     설정하는 방법이 있을 거 같다.
+       -->
     <div class="header">
         <h2>2026년 1월</h2>
-        
-        <div class="wrap_month">
-            <div class="cell week">일</div>
-            <div class="cell week">월</div>
-            <div class="cell week">화</div>
-            <div class="cell week">수</div>
-            <div class="cell week">목</div>
-            <div class="cell week">금</div>
-            <div class="cell week">토</div>
+     </div>
+     <div class="wrap_month">
+          <div class="cell week">일</div>
+          <div class="cell week">월</div>
+          <div class="cell week">화</div>
+          <div class="cell week">수</div>
+          <div class="cell week">목</div>
+          <div class="cell week">금</div>
+          <div class="cell week">토</div>
+          
+          <div class="cell date"></div>
+          <div class="cell date"></div>
+          <div class="cell date"></div>
+          <div class="cell date"></div>
+          <div class="cell date">1</div>
+          <div class="cell date">2</div>
+          <div class="cell date">3</div>
 
-            <div class="cell date"></div>
-            <div class="cell date"></div>
-            <div class="cell date"></div>
-            <div class="cell date"></div>
-            <div class="cell date">1</div>
-            <div class="cell date">2</div>
-            <div class="cell date">3</div>
+          <div class="cell date">4</div>
+          <div class="cell date">5</div>
+          <div class="cell date">6</div>
+          <div class="cell date">7</div>
+          <div class="cell date">8</div>
+          <div class="cell date">9</div>
+          <div class="cell date">10</div>
 
-            <div class="cell date">4</div>
-            <div class="cell date">5</div>
-            <div class="cell date">6</div>
-            <div class="cell date">7</div>
-            <div class="cell date">8</div>
-            <div class="cell date">9</div>
-            <div class="cell date">10</div>
+          <div class="cell date">11</div>
+          <div class="cell date">12</div>
+          <div class="cell date">13</div>
+          <div class="cell date">14</div>
+          <div class="cell date">15</div>
+          <div class="cell date">16</div>
+          <div class="cell date">17</div>
 
-            <div class="cell date">11</div>
-            <div class="cell date">12</div>
-            <div class="cell date">13</div>
-            <div class="cell date">14</div>
-            <div class="cell date">15</div>
-            <div class="cell date">16</div>
-            <div class="cell date">17</div>
+          <div class="cell date">18</div>
+          <div class="cell date">19</div>
+          <div class="cell date">20</div>
+          <div class="cell date">21</div>
+          <div class="cell date">22</div>
+          <div class="cell date">23</div>
+          <div class="cell date">24</div>
 
-            <div class="cell date">18</div>
-            <div class="cell date">19</div>
-            <div class="cell date">20</div>
-            <div class="cell date">21</div>
-            <div class="cell date">22</div>
-            <div class="cell date">23</div>
-            <div class="cell date">24</div>
-
-            <div class="cell date">25</div>
-            <div class="cell date">26</div>
-            <div class="cell date">27</div>
-            <div class="cell date">28</div>
-            <div class="cell date">29</div>
-            <div class="cell date">30</div>
-            <div class="cell date"></div>
-        </div>
+          <div class="cell date">25</div>
+          <div class="cell date">26</div>
+          <div class="cell date">27</div>
+          <div class="cell date">28</div>
+          <div class="cell date">29</div>
+          <div class="cell date">30</div>
+          <div class="cell date"></div>
     </div>
 </body>
 </html>
